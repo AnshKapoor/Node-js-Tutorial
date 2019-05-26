@@ -6,7 +6,7 @@ RL.question('What is your name',(name)=>{ // New way to create a function in ES6
     RL.prompt();
     RL.on('line',(age)=>{
         if(age<18){
-            util.log('${name.trim()} because you are ${age} years old,you cannor proceed')
+            util.log(`${name.trim()} because you are ${age} years old,you cannor proceed`);
             RL.close();        
         }
 
