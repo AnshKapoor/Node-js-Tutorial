@@ -1,2 +1,2 @@
 const fs = require('fs');
-fs.rmdirSync('./views');
+fs.unlinkSync('./content/test.js');
