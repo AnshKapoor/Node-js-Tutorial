@@ -8,6 +8,7 @@ http.createServer((req,serverRes)=>{
             httpres.on('data',data=>{
                 httpres.setEncoding('utf8');
                 console.log(data);
+                serverRes.write(data);
 
             });
             httpres.on('end',()=>{
@@ -15,5 +16,9 @@ http.createServer((req,serverRes)=>{
                 console.log("its over");
             });
         });
-    };
+    }
+    else{
+        serverRes.writeHead(404,{'Content-Type':'text/plain'});
+        serverRes.end('errr');
+    }
 }).listen(4444);
