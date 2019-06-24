@@ -1,22 +1,21 @@
 {
-  "name": "node-js-tutorial",
+  "name": "login",
   "version": "1.0.0",
-  "description": "This repository conatainscode i practised from node js cookbook",
-  "main": "server.js",
+  "description": "login",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AnshKapoor/Node-js-Tutorial.git"
-  },
   "keywords": [
-    "Node-js"
+    "Test",
+    "app"
   ],
   "author": "Ansh Kapoor",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AnshKapoor/Node-js-Tutorial/issues"
-  },
-  "homepage": "https://github.com/AnshKapoor/Node-js-Tutorial#readme"
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.0"
+  }
 }
